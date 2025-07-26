@@ -3,16 +3,16 @@
 
 using namespace std;
     vector<string> fizz(int n){
-        vector<string> answer[n]={};
+        vector<string> answer(n);
         for (int i=1;i<=n;i++){
             if (i%3==0 && i%5==0){
-                answer[i-1]="Fizzbuzz";
+                answer[i-1]="FizzBuzz";
             }
             else if(i%3==0){
-                answer[i-1]="fizz";
+                answer[i-1]="Fizz";
             }
             else if(i%5==0){
-                answer[i-1]="buzz";
+                answer[i-1]="Buzz";
             }else{
                 answer[i-1] = to_string(i);
             }
@@ -22,7 +22,11 @@ using namespace std;
 
 int main(){
 
-    cout<<fizz(3);
+    vector<string> result = fizz(3);
+    for (const string& s : result) {
+        cout << s << " ";
+    }
+    return 0;
 
 }
 
