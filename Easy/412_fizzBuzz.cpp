@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include<string>
+// #include<string>
 
 using namespace std;
     vector<string> fizz(int n){
@@ -26,6 +26,7 @@ int main(){
     for (const string& s : result) {
         cout << s << " ";
     }
+    
     return 0;
 
 }
