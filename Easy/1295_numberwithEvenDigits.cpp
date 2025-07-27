@@ -3,10 +3,6 @@
 
 using namespace std;
 
-vector<string> fizzBuzz(int n){
-
-}
-
 int main(){
     int arr[] = {437,315,322,431,534};
     int even = 0;
