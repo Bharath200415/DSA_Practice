@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+
+#include <iostream>
+#include <vector>
 using namespace std;
 
 //Consists of : basic structure of a LL
@@ -45,6 +47,8 @@ int lengthofLL(Node* head){
         cout<<temp->data<<" ";
         temp = temp->next;
         count++;
+      
+        
     }
     return count;
 
@@ -67,6 +71,8 @@ int searchele(Node* head,int ele){
     return -1;
 
 }
+vector <int> data = {1,2,3,4};
+
 int main(){
     vector<int> arr = {2,3,4,6};
     Node *y = new Node(arr[0]);

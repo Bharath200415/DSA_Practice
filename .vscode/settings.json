@@ -3,5 +3,6 @@
         "iostream": "cpp",
         "xstring": "cpp",
         "xlocale": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
