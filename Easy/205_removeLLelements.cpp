@@ -1,3 +1,4 @@
+// question link-> https://leetcode.com/problems/remove-linked-list-elements/
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -10,8 +11,6 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-
-
 
 //insertion function
 ListNode* convertarrtoLL(vector<int> &arr){
@@ -57,7 +56,6 @@ class Solution{
         return head;
     }
         
-     
 
 };
 
