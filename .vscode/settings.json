@@ -2,7 +2,10 @@
     "files.associations": {
         "iostream": "cpp",
         "xstring": "cpp",
-        "xlocale": "cpp"
+        "xlocale": "cpp",
+        "array": "cpp",
+        "vector": "cpp",
+        "xutility": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
