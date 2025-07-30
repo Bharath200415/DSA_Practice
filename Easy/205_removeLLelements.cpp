@@ -59,14 +59,30 @@ class Solution{
 
 };
 
+ListNode* deleteTail(ListNode* head){
+    ListNode* temp = head;
+    ListNode* pointer = head;
+    if (head==NULL || head->next==NULL){
+        return NULL;
+    }
+
+    while (temp->next->next!=NULL){
+        temp = temp->next;
+    }
+    delete temp->next;
+    temp->next = nullptr;
+    return head;
+}
 int main(){
     vector<int> arr1 = {1,2,3,4,1};
     ListNode* head = convertarrtoLL(arr1);
     Solution s;
     ListNode* head2 = s.removeElements(head,1);
-    while (head2){
-        cout<<head2->val<<" ";
-        head2=head2->next;
+    ListNode* head3 = deleteTail(head2);
+
+    while (head3){
+        cout<<head3->val<<" ";
+        head3=head3->next;
     }
 
 }
