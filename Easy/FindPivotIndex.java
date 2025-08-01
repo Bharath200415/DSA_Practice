@@ -18,7 +18,7 @@ class Solution {
     }
 }
 
-class FindPivotIndex extends Solution{
+class FindPivotIndex {
     public static void main (String args[]){
         Solution a = new Solution();
         int arr1[] = {1,7,3,6,5,6};
