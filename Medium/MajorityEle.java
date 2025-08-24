@@ -1,4 +1,3 @@
-import java.util.*;
 public class MajorityEle{
     static void checkEle(int arr[]){
         int n = arr.length;
@@ -18,21 +17,48 @@ public class MajorityEle{
 
         }
         if (maxCount>n/2){
-                System.out.println(arr[index]);
+            System.out.println(arr[index]);
                 
 
-            }else{
-                System.out.println("No majority elements");
-            }
-        
-
-        
-
-
+        }else{
+            System.out.println("No majority elements");
+        }
     }
+    
+    //moore voting algorithm:
+    public static int optimalcheck(int arr[]){
+        int n = arr.length;
+        int element=-1;
+        int count=0;
+        for (int num:arr){
+            if (count==0){
+                element=num;
+                count=1;
+            }
+            else if(num==element) {
+                count++;
+                
+            }
+            else{
+                count--;
+            }
+        }
+        count=0;
+        for(int num:arr){
+            if (num==element){
+                count++;
+            }
+        }
+        if (count>n/2){
+            return element;
+        }else{
+            return -1;
+        }
+
+    }    
     public static void main(String args[]){
-        int[] arr = {1,1,2,2,2,2,2};
-        checkEle(arr);
+        int[] arr={1,2,3,1,1,1,1};
+        System.out.println(optimalcheck(arr));
 
 
     }
