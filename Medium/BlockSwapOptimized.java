@@ -4,6 +4,7 @@ public class BlockSwapOptimized {
     
     // Recursive Block Swap Algorithm
     static void blockswap(int[] arr, int start, int block, int n) {
+        
         if (block <= 0 || block >= n) return;
 
         int sizeA = block;
@@ -36,12 +37,30 @@ public class BlockSwapOptimized {
         }
     }
 
+    // public static int[] rotateByIndex(int[] arr, int d){
+    //     int n = arr.length;
+    //     if (d<=0||d>=n){
+    //         return arr;
+    //     }
+    //     int[] temp = new int[d];
+    //     for (int i=0;i<d;i++){
+    //         temp[i]=arr[i];
+    //     }
+    //     for (int i=0;i<n-d;i++){
+    //         arr[i]=arr[i+d];
+    //     }
+    //     for (int i=0;i<d;i++){
+    //         arr[n-d+i] = temp[i];
+    //     }
+    //     return arr;
+    // }
+
     public static void main(String[] args) {
         int[] arr = {16, 17, 18, 21, 19};
-        int block = 2;
+        int block = 1;
 
         System.out.println("Original array: " + Arrays.toString(arr));
-        blockswap(arr, 0, block, arr.length);
+        blockswap(arr,0 , block, arr.length);
         System.out.println("Rotated array: " + Arrays.toString(arr));
     }
 }
