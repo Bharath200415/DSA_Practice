@@ -1,7 +1,7 @@
+//Time complexity: 0(n) 
+//Space Complexity: O(1)
 import java.util.*;
-public class Equilibrium{
-
-    
+public class Equilibrium {
     public static void findEquilibriumIndex(int[] arr) {
         // null or empty array.
         if (arr == null || arr.length == 0) {
@@ -13,7 +13,7 @@ public class Equilibrium{
         for (int num:arr){
             totalsum+=num;
         }
-        //now we'll have to check
+        //now we'll have to check 
         int leftsum=0;
         for (int i=0;i<arr.length;i++){
             int rightsum = totalsum-leftsum-arr[i];
@@ -31,7 +31,9 @@ public class Equilibrium{
 
     public static void main(String[] args) {
         int[] arr = {1, 3, 5, 2, 2};
-        findEquilibriumIndex(arr); // Expected: Equilibrium index found at position: 3
+        findEquilibriumIndex(arr); //Expected: Equilibrium index found at position: 3
+
     }
+
 }
     
