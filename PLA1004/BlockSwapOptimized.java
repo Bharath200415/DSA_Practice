@@ -16,23 +16,19 @@ public class BlockSwapOptimized {
             swap(arr, start, start + sizeA, sizeA);
             return;
         }
-
         // Case 2: A is smaller
         if (sizeA < sizeB) {
             swap(arr, start, start + n - sizeA, sizeA);
             blockswap(arr, start, block, n - sizeA);
         } 
-
         // Case 3: B is smaller
         else {
             swap(arr, start, start + sizeA, sizeB);
             blockswap(arr, start + sizeB, block - sizeB, sizeA);
         }
-        
     }
 
-    // Utility swap
-    public static void swap(int[] arr, int f, int s, int d) {
+    public static void swap(int[] arr, int f, int s, int d){
         for (int i = 0; i < d; i++) {
             int temp = arr[f + i];
             arr[f + i] = arr[s + i];

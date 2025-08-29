@@ -30,5 +30,6 @@ public class Hourglass{
         };
         int res = findMaxSum(newmat);
         System.out.println(res);
+        System.out.println(newmat[0][1]);
     }
 }

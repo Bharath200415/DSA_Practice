@@ -9,7 +9,6 @@ class Eulersphi{
                 while (n%p==0){
                     n/=p;  
                 }
-                
                 result-=result/p;
             }      
         }

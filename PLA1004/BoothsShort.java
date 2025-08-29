@@ -1,7 +1,6 @@
 public class BoothsShort {
     public static int boothsMultiply(int a, int b) {
         int n = 8; // number of bits we consider (can be 8/16/32 depending on range)
-
         int A = 0;       // accumulator
         int Q = b;       // multiplier
         int M = a;       // multiplicand

@@ -13,6 +13,7 @@ public class LeaderArray {
             if (arr[i]>maxsoFar){
                 maxsoFar=arr[i];
                 System.out.print(maxsoFar+" ");
+
             }
 
         }

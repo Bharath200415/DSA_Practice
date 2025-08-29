@@ -35,19 +35,11 @@ public class Strobogrammatic{
         
     }
     public static void main(String args[]){
-        int n=2;
+        int n=3;
         for (String a:stroboResult(n)){
             System.out.print(a+" ");
         }
     }
 
 }
-    
-            
-
-        
-
-
-
-
 
