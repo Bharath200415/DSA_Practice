@@ -11,7 +11,8 @@
         "limits": "cpp",
         "random": "cpp",
         "utility": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "bitset": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

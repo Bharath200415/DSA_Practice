@@ -10,7 +10,7 @@ public class MajorityEle{
                     count++;
                 }
             }
-            
+
             if (count>maxCount){
                 maxCount=count;
                 index = i;
