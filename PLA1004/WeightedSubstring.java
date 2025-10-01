@@ -2,29 +2,26 @@ import java.util.*;
 
 public class WeightedSubstring{
     static int distinctsub(String P, String Q, int K, int N){
+        HashSet<String> res  = new HashSet<String>();
 
-        HashSet<String> S = new HashSet<String>();
-        
-        for (int i=0;i<N;i++){
+        for (int i = 0;i<N; i++){
             int sum = 0;
-
             String s = "";
-            //abcde 
+            
             for (int j=i;j<N;j++){
+
                 int pos = P.charAt(j)-'a';
                 sum+= Q.charAt(pos)-'0';
-                s+= P.charAt(j);
+                s+=P.charAt(j);
 
                 if (sum<=K){
-                    S.add(s);
+                    res.add(s);
                 }else{
                     break;
                 }
             }
         }
-
-        return S.size();
-
+        return res.size();
     }
     public static void main(String[] args) {
         String P = "abcde";
