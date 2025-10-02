@@ -1,9 +1,7 @@
 // 1. If length of string is even, then the frequency of each character in the string must be even. 
 // 2. If the length is odd then there should be one character whose frequency is odd and all other chars must have even frequency and at-least one occurrence of the odd character must be present in the middle of the string.
 
-
-
-// Time complexity: O(n)
+// Time complexity: O(n) | 
 public class LexicographicalPalindrome{
     static String findpalindromicString(String str1){
         //aab
@@ -12,6 +10,7 @@ public class LexicographicalPalindrome{
         for (char c: str.toCharArray()){
             freq[c-'a']++;
         }
+
         int len = str.length();
 
         //checking for the existence of any odd character occurence
@@ -27,7 +26,6 @@ public class LexicographicalPalindrome{
             return "No palindromic string ";
         }
 
-        
         StringBuilder front = new StringBuilder();
         StringBuilder rear = new StringBuilder();
         String odd = " ";

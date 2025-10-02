@@ -8,13 +8,13 @@ public class QuickSort {
         for (int j = low;j<high;j++){
             if (arr[j]<=pivot){
                 i++;
-                
+
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
-
             }
         }
+
         int temp = arr[i+1];
         arr[i+1]=arr[high];
         arr[high] = temp;
@@ -35,7 +35,4 @@ public class QuickSort {
 
     }
 
-
-
-    
 }

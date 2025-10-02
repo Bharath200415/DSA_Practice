@@ -13,11 +13,8 @@ public class LeaderArray {
             if (arr[i]>maxsoFar){
                 maxsoFar=arr[i];
                 System.out.print(maxsoFar+" ");
-
             }
-
         }
-
     }
     public static void main(String[] args) {
         int[] arr={1,2,7,4,5};

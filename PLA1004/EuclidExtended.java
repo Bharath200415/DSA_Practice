@@ -14,6 +14,9 @@ public class EuclidExtended {
             result.y =0;
             return a;
         }
+        // res=0,0 a=35,b=15-> temp = 0,0-> gcd = (15,5,temp)=> res.x=1, res.y = -2
+        // temp=0,0 a=15,b=5-> temp2 = 0,0 ->gcd =(5,0,temp2)=>5 ->temp.x=0, temp.y =1
+        //temp2=0,0 a=5, b =0, temp2.x=1,y=0->a
         Result temp = new Result(0,0);
         int gcd =gcdExtended(b,a%b, temp);
 

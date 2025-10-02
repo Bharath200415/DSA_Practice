@@ -5,21 +5,20 @@ public class AliceappleTree {
             return m;
         }
         else if (m<=s*k+e+w){
-            return s*k+(m-s*k)*k;
+            return s*k+(m-s*k);
         }
         else{
             return -1;
         }
-        
 
     }
     public static void main (String args[]){
-        int m =17;
-        int k =15; 
-        int n=0;
-        int s=1;
-        int w=1;
-        int e=1;
+        int m =17; //no. of apples to be collected
+        int k =15; //no.of apples in each tree
+        int n=0; //no. of trees in north
+        int s=1; //no. of trees in south
+        int w=1; //no .of trees in west
+        int e=1; // no. of trees in east
         System.out.println(Minapples(m,k,n,s,w,e));
 
     }

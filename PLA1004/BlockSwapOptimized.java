@@ -39,7 +39,7 @@ public class BlockSwapOptimized {
 
     public static void main(String[] args) {
         int[] arr = {16, 17, 18, 21, 19};
-        int block = 1;
+        int block = 2;
 
         System.out.println("Original array: " + Arrays.toString(arr));
         blockswap(arr,0, block, arr.length);

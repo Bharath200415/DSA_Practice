@@ -14,8 +14,8 @@ public class MaxProduct {
             maxsoFar = Math.max(current,Math.max(prevmax*current, minsoFar*current));
             // minsoFar= Math.min(current, Math.min(prevmax*current, minsoFar*current));
             result = Math.max(result,maxsoFar);
-
         }
+
         return result;
     }
 
@@ -36,13 +36,10 @@ public class MaxProduct {
         return result;
     }
 
-        
-    
-
     public static void main (String args[]){
         int[] arr = {2,5,-15};
         int arr2[] = {1,2,0,3,0};
-        System.out.println("max product is : "+maxprod2(arr));
+        System.out.println("max product is : "+maxprod(arr));
     
     }
     

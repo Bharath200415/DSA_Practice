@@ -33,7 +33,7 @@ public class SortedUniquePermutation {
     }
     public static void main (String args[]){
         String str1 = "TSR";
-        System.out.println(permuteUnique(str1));
+        System.out.println(permuteUnique(str1));;
 
     }
     

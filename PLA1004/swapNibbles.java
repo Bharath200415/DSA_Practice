@@ -5,14 +5,14 @@ public class swapNibbles {
         return swapnum;
 
     }
+
     public static void main (String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         int a = sc.nextInt();
         System.out.println("original string: "+a);
         System.out.println("updated string: "+swapnib(a));
-       
-
+        System.out.println("Binary:"+String.format("%8s",Integer.toBinaryString(swapnib(a))).replace(' ','0'));
 
     }
 }

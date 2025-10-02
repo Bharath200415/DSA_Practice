@@ -16,11 +16,10 @@ vector<int>  swapArr(vector<int> &arr1,int block){
     }
     return res;
 
-
 }
 
 int main(){
-    vector<int> arr = {16,17,18,19};
+    vector<int> arr = {16,17,18,19,20};
     vector<int> result= swapArr(arr,2);
     for (int num : result){
         cout<<num<<" ";

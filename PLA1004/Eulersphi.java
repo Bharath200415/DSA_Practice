@@ -2,6 +2,7 @@ import java.util.*;
 
 class Eulersphi{
     static int phi(int n){
+        // 35-> 35->
         int result=n;
 
         for (int p=2; p*p<=n;++p){

@@ -21,7 +21,6 @@ public class Strobogrammatic{
         for (String mid: middles){
             if (n!=length){
                 result.add("0"+mid+"0");
-
             }
 
             result.add("8"+mid+"8");

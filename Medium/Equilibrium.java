@@ -8,6 +8,7 @@ public class Equilibrium {
             System.out.println("Array is empty or null.");
             return;
         }
+
         int totalsum=0;
         boolean found =false;
         for (int num:arr){

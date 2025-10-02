@@ -60,8 +60,6 @@ public class MajorityEle{
     public static void main(String args[]){
         int[] arr={1,2,3,1,1,1,1};
         System.out.println(optimalcheck(arr));
-
-
     }
     
 

@@ -10,10 +10,12 @@ public class LongestSequence {
             if (arr[r]==0){
                 zeros++;
             }
+
             if (zeros>k){
                 if (arr[left]==0) zeros--;
                 left++;
             }
+            
             len = r-left+1;
             maxlen = Math.max(maxlen,len);
             

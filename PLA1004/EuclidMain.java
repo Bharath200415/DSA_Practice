@@ -3,7 +3,7 @@ public class EuclidMain {
         if (a==0){
             return b;
         }
-        return gcd (b%a,a);
+        gcd(b%a,a);
     }
     public static int gcd2(int a, int b){
         while (b!=0){
