@@ -29,6 +29,7 @@ public class SortedUniquePermutation {
             
             sb.deleteCharAt(sb.length()-1);
             used[i]=false;
+            
         }
     }
     public static void main (String args[]){

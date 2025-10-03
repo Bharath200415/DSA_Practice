@@ -28,7 +28,7 @@ public class LexicographicalPalindrome{
 
         StringBuilder front = new StringBuilder();
         StringBuilder rear = new StringBuilder();
-        String odd = " ";
+        String odd = "";
         //aabcc
 
         for (int i = 0;i<26;i++){
@@ -58,7 +58,7 @@ public class LexicographicalPalindrome{
                 countOdd++;
             }
         }
-        
+
         if ((len % 2 == 0 && countOdd != 0) || (len % 2 == 1 && countOdd != 1)) {
             return "No palindromic string";
         }

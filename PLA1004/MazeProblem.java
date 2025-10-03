@@ -43,7 +43,7 @@ public class MazeProblem {
             if (solvemazeUtil(maze,x-1,y,sol)){
                 return true;
             }
-            if (solvemazeUtil(maze,x,y-1,sol,sol)){
+            if (solvemazeUtil(maze,x,y-1,sol)){
                 return true;
             }
             sol[x][y]=0;

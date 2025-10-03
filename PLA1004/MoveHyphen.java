@@ -11,6 +11,7 @@ public class MoveHyphen{
                 result.append(str1.charAt(i));
             }
         }
+
         return result;
 
     }

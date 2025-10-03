@@ -22,7 +22,7 @@ public class Manachers{
             for (int j=i+1;j<=n;j++){
                 String sub = s.substring(i,j);
                 if (manachersfunc(sub) && sub.length()>longest.length()){
-                    longest  = sub;
+                    longest = sub;
                 }
             }
         }
@@ -31,8 +31,7 @@ public class Manachers{
     public static void main(String[] args) {
         String st = "abaxabaxabb";
         System.out.println(longestpalindrome(st));
-        System.out.println(st.substring(0,2));
-
+        // System.out.println(st.substring(0,2));
 
     }
 }

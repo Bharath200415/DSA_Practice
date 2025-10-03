@@ -27,7 +27,7 @@ public class BoothsShort {
         }
 
         // Final product = (A << n) + Q
-        return (A << n) | Q;
+        return (A  << n)+Q;
     }
 
     public static void main(String[] args) {

@@ -3,7 +3,7 @@ public class EuclidMain {
         if (a==0){
             return b;
         }
-        gcd(b%a,a);
+        return gcd(b%a,a);
     }
     public static int gcd2(int a, int b){
         while (b!=0){
@@ -15,7 +15,7 @@ public class EuclidMain {
 
     }
     public static void main(String[] args) {
-        System.out.println(gcd2(35,15));
+        System.out.println(gcd(35,15));
     }
     
 }
