@@ -4,15 +4,12 @@
 // Time complexity: O(n) | 
 public class LexicographicalPalindrome{
     static String findpalindromicString(String str1){
-        //aab
         String str = str1.toLowerCase();
         int[] freq = new int[26];
         for (char c: str.toCharArray()){
             freq[c-'a']++;
         }
-
         int len = str.length();
-
         //checking for the existence of any odd character occurence
         int countOdd = 0;
         for (int f:freq){
@@ -20,7 +17,6 @@ public class LexicographicalPalindrome{
                 countOdd++;
             }
         }
-
         //cases where no palindrome can be formed
         if ((len%2==0 && countOdd!=0) || (len%2==1 && countOdd!=1)){
             return "No palindromic string ";

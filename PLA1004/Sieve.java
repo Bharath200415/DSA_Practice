@@ -6,7 +6,6 @@ public class Sieve{
             mark[i]=true;
         }
         // Arrays.fill(mark, true);
-
         for (int p = 2; p * p <= limit; p++) {
             if (mark[p]) {
                 for (int i = p * p; i <= limit; i += p)
