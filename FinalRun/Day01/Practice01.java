@@ -51,12 +51,22 @@ public class Practice01 {
             default->System.out.print("invalid empId");
                     
         }
+    }
 
+    // Java is pass-by-value.
+    // For objects and arrays, the value passed is the reference, not the object itself.
+    
+    void changearr(int[] nums){
+        nums[0]=99;
     }
 
     public static void main(String[] args) {
         Practice01 obj = new Practice01();
-        obj.nestedswitch();
-     }
+        int arr1[] = {1,2,3,4};
+
+        obj.changearr(arr1);
+        System.out.print(arr1[0]);
+        
+    }
     
 }
