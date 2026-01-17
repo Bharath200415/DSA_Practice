@@ -1,8 +1,10 @@
 import java.util.*;
 
 public class BinarySearch {
+
     //best time complexity: O(1)
     //Worst time complexity: O(n)
+    
     static int binarysearch(int[] arr, int target){
         int start=0;
         int end = arr.length-1;
@@ -28,6 +30,7 @@ public class BinarySearch {
         //Steps: 1. find the middle element in a sorted array
         //2: if target>middle-> search in the right else search in left
         //3. if target==middle then element=ans;
+        
         int[] arr = {12,3,4,8,14,12};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
