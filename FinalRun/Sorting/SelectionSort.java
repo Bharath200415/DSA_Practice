@@ -1,5 +1,7 @@
-import java.util.*;
+//tc: O(n^2)
+//sc:O(1)
 
+import java.util.*;
 
 public class SelectionSort {
 
@@ -14,6 +16,7 @@ public class SelectionSort {
                 }
             }
 
+            //hello world
             int temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
